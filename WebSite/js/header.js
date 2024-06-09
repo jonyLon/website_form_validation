@@ -1,4 +1,6 @@
-let xhr = new XMLHttpRequest();
-xhr.open("GET", "/_header.html", false); //запит буде синхроний
-xhr.send();
-document.write(xhr.response);
+const loadDOM = (page) => {
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", `/${page}`, false); //запит буде синхроний
+  xhr.send();
+  document.write(xhr.response);
+}

@@ -1,21 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Розетка</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/site.css" rel="stylesheet" />
-</head>
-<body>
+    <link href="/css/site.css" rel="stylesheet" />
     <script src="/js/header.js"></script>
+</head>
+
+<body>
+    <script> loadDOM("_header.html"); </script>
     <div class="container">
         <h1 class="text-center">Реєстрація користувача</h1>
         <div class="row">
-            <form class="col-md-6 offset-md-3 needs-validation" novalidate>
+            <form class="col-md-6 offset-md-3" id="needs-validation" novalidate>
                 <div class="row">
                     <div class="mb-3 col-md-6">
                         <label for="lastName" class="form-label">Прізвище</label>
-                        <input type="text" class="form-control" id="lastName" required>
+                        <input type="text" class="form-control" id="surname" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -49,7 +52,7 @@
                 <div class="row d-flex align-items-center">
                     <div class="col-md-3">
                         <label for="image" class="form-label">
-                            <img id="imageDisplay" src="/img/no-photo.png" alt="фото" width="100%">
+                            <img id="imagePreview" src="/img/no-photo.png" alt="фото" width="100%">
                         </label>
                     </div>
                     <div class="mb-3 col-md-9">
@@ -60,7 +63,7 @@
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    <input type="password" class="form-control" id="inputPassword" required>
                     <div class="invalid-feedback">
                         Please provide a valid password.
                     </div>
@@ -72,7 +75,10 @@
             </form>
         </div>
     </div>
-    <script src="js/forms.js"></script>
+    <script>loadDOM("_messageDialog.html");</script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/forms.js"></script>
+
 </body>
+
 </html>
