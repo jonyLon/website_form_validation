@@ -65,7 +65,7 @@ form.addEventListener('submit', event => {
             surname: surname_v,
             name: name_v,
             password: inputPass_v,
-            phone: phone_v
+            phone: phone_v,
         }
 
         let users = JSON.parse(localStorage.getItem("users")) || [];

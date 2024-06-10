@@ -14,25 +14,21 @@
   <div class="container">
     <h1 class="text-center">Вхід</h1>
     <div class="row">
-      <form class="col-md-6 offset-md-3" id="login_valid" novalidate>
-        <div class="row">
-          <div class="mb-3 col-md-6">
+      <form class="card-group" id="login_valid" novalidate>
+        <div class="card m-3">
+          <div class="card-body">
             <label for="lastName" class="form-label">Електронна пошта</label>
             <input type="text" class="form-control" id="email" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Пароль</label>
-              <input type="password" class="form-control" id="inputPassword" required>
-              <div class="invalid-feedback">
-                Please provide a valid password.
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-success me-2">Вхід</button>
-              <button type="reset" class="btn btn-primary">Скасувать</button>
-            </div>
+          </div>
+          <div class="card-body">
+            <label for="exampleInputPassword1" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="inputPassword" required>
+          </div>
+          <div class="d-flex justify-content-center mb-3 mt-1">
+            <button type="submit" class="btn btn-success me-2" id="entrance">Вхід</button>
+            <button type="reset" class="btn btn-primary" id="cancel">Скасувать</button>
+          </div>
+        </div>
       </form>
     </div>
   </div>
